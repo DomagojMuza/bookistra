@@ -1,0 +1,149 @@
+$border-radius: 8px;
+
+$display1-size: 5rem;
+$display2-size: 4rem;
+$display3-size: 3rem;
+$display4-size: 2.5rem;
+
+//$font-size-base: 1.125rem;
+$h1-font-size: 	1.875rem;
+$font-size-base: 1rem;
+$lead-font-size: 25px;
+$lead-font-weight: 400;
+$font-weight-normal: 300;
+$font-weight-base: $font-weight-normal;
+$font-weight-bold: 600;
+$font-size-sm: $font-size-base * .80 !important;
+$link-hover-decoration: none;
+
+$gray-900: #1A1A32; // dark 
+$gray-400:  #f2f9ff; // muted
+$gray-100: #CFCFC0 ; // light
+
+//$gray-200: #E0E0E0; // gray
+$primary: #1C2E45;
+$warning: #F3D0A1;
+$body-color: #444;
+$secondary: #615046;
+$dark: $gray-900;
+$success: #5ba11e;
+$white: #ffffff;
+$info: #62c7f6;
+$light: $gray-100;
+$headings-color: $primary;
+
+$green: #118C94;
+$red: #ef1164;
+$danger: $red;
+
+$danger-lt: #ffc5bf;
+$text-muted: #447095;
+$muted: #447095;
+
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_maps.scss';
+@import 'bootstrap/scss/_utilities.scss';
+
+/*$theme-colors: map-merge(("gray": $gray-200,
+        ),
+        $theme-colors);*/
+
+$utilities: map-merge($utilities,
+        ("opacity": (property: opacity,
+                values: (0: 0,
+                    25: .25,
+                    50: .5,
+                    60: .60,
+                    75: .75,
+                    80: .80,
+                    85: .85,
+                    100: 1,
+                )),
+        ));
+
+$card-group-margin: map-get($spacers, 4);
+$hr-border-color: rgba($black, .15);
+
+$font-family-sans-serif: "Roboto", sans-serif, #{$font-family-sans-serif};
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: "Raleway", sans-serif;;
+$headings-font-weight: 300;
+
+// custom
+$font-cursive: "Carattere", cursive;
+
+$headings-line-height: 1.4;
+$line-height-base: 1.7;
+
+$text-muted: $gray-400;
+
+$btn-font-family: $headings-font-family;
+$btn-font-weight: 400;
+$btn-padding-y: 10px;
+$btn-padding-x: 24px;
+
+// NAVBAR
+$navbar-light-color: $body-color;
+$navbar-light-hover-color: $primary;
+$navbar-nav-link-padding-x: 1rem;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-active-color: $white;
+
+// CHECKBOX
+$form-check-input-checked-bg-color: $gray-400;
+$form-check-input-checked-border-color: $gray-400;
+$form-check-input-focus-box-shadow: $gray-400;
+$form-check-input-focus-border: $gray-400;
+
+//RANGE
+$form-range-thumb-bg: $gray-400;
+$form-range-thumb-active-bg: $gray-400;
+$form-range-thumb-focus-box-shadow: 0 0 0 1px $gray-400, $gray-400;
+
+//DROPDOWN
+$dropdown-link-hover-bg: $primary;
+$dropdown-link-hover-color: $gray-900;
+$dropdown-link-active-color: $gray-900;
+
+// GRADIENT
+$gradient: linear-gradient(180deg, rgba($dark, 0) 75%, rgba($dark, 0.8) 100%);
+$gradient-form: linear-gradient(90deg, rgba($gray-400,0) 0%, rgba($gray-400, 1) 100%);
+// SHADOW
+$box-shadow: drop-shadow(0px 4px 15px rgba($dark, 0.15));
+
+// CARD
+$card-border-width: 0;
+
+// TOOLTIPS
+$tooltip-bg: $primary;
+$tooltip-arrow-color: $primary;
+
+
+$border-alpha-color: rgba(0,0,0,0.1);
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1360px,
+    xxl: 1600px);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1360px
+);
+
+
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+@import 'header';
+@import 'content';
+@import 'objectList';
+
+
+

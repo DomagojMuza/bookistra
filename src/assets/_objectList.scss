@@ -1,0 +1,13 @@
+.object-list {
+    .img-fluid { 
+        height: 150px;
+        width: 266px;
+    }
+
+    .flex-100 {
+        div { 
+            flex: 0 0 100%;
+        }
+    }
+
+}
