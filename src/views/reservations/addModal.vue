@@ -133,7 +133,7 @@ export default {
         <div class="modal-dialog">
             <form class="modal-content" @submit.prevent="addReservation">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add reservation </h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Dodaj rezervaciju</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -143,9 +143,9 @@ export default {
                             <div class="mt-3 sadrzaj col-12">
                                 <div>
                                     <label for="objectName" class="form-label mb-0 mt-2 text-dark">
-                                        Select object</label>
+                                        Odaberite smještaj</label>
                                     <v-select v-model="selectedObject" @input="objectOnChange"
-                                        placeholder="Enter object name or id" required label="name" :options="objects"
+                                        placeholder="Naziv ili id objekta" required label="name" :options="objects"
                                         :required="!selectedObject">
                                         <template #search="{ attributes, events }">
                                             <input class="vs__search" :required="!selectedObject" v-bind="attributes"
@@ -156,18 +156,18 @@ export default {
                             </div>
                             <div class="mt-3 sadrzaj col-12">
                                 <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">
-                                        Reservation period</label>
+                                        Period rezervacije</label>
                                     <VueDatePicker v-model="date" :allowed-dates="allowedDates" required
                                         :disabled="selectedObject == null" @update:model-value="handleDate" :format="format"
-                                        :preview-format="format" placeholder="Select Date" range multi-calendars />
+                                        :preview-format="format" placeholder="Datum rezervacije" range multi-calendars />
                                 </div>
                             </div>
                             <div class="mt-3 sadrzaj col-12">
                                 <div>
                                     <label for="objectName" class="form-label mb-0 mt-2 text-dark">
-                                        Customer</label>
+                                        Kupac</label>
                                     <v-select v-model="selectedCustomer" @input="customerOnChange" label="name"
-                                        placeholder="Enter customer name" required
+                                        placeholder="Ime kupca" required
                                         :options="customers">
                                         <template #search="{ attributes, events }">
                                             <input class="vs__search" :required="!selectedCustomer" v-bind="attributes"
@@ -178,13 +178,13 @@ export default {
                             </div>
                             <div class="mt-3 sadrzaj col-lg-6 col-12">
                                 <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">
-                                        Total</label><input type="number" required v-model="total" name="name" id=""
+                                        Ukupno</label><input type="number" required v-model="total" name="name" id=""
                                         class="form-control border border-dark"></div>
                             </div>
                             <div class="mt-3 sadrzaj col-lg-6 col-12">
                                 <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">
                                         Status</label>
-                                    <v-select placeholder="Select status" v-model="selectedStatus" :required="true" :options="statuses">
+                                    <v-select placeholder="Odaberite status" v-model="selectedStatus" :required="true" :options="statuses">
                                         <template #search="{ attributes, events }">
                                             <input class="vs__search" :required="!selectedStatus" v-bind="attributes"
                                                 v-on="events" />
@@ -196,8 +196,8 @@ export default {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                    <button type="submit" class="btn btn-primary">Spremi izmjene</button>
                 </div>
             </form>
         </div>

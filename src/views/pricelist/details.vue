@@ -52,14 +52,14 @@ export default {
 <template>
     <div class="container">
         <div class="my-4">
-            <h3 v-if="object">Pricelist for accommodation {{ object.name }}</h3>
-            <div class="btn btn-primary mb-2" @click="openAddPricelistModal">Add item</div>
+            <h3 v-if="object">Cijenik za smještaj {{ object.name }}</h3>
+            <div class="btn btn-primary mb-2" @click="openAddPricelistModal">Dodaj stavku</div>
             <div v-if="pricelistItems.length" class="row gy-4">
                 <div class="col-12">
                     <div class="row d-lg-flex d-none">
-                        <div class="col-2">Date from</div>
-                        <div class="col-2">Date to</div>
-                        <div class="col-2">Price (€)</div>
+                        <div class="col-2">Datum od</div>
+                        <div class="col-2">Datum do</div>
+                        <div class="col-2">Cijena (€)</div>
                     </div>
                 </div>
                 <pricelist_item_card v-for="item in pricelistItems" class="col-12" :item="item" @resetItemData="resetItem" @itemDeleted="removeItemFromDom" />

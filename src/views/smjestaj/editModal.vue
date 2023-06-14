@@ -29,7 +29,7 @@ export default {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit object</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Izmjeni podatke o smještaju</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -38,7 +38,7 @@ export default {
 
                             <div class="mt-3 sadrzaj col-12">
                                 <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">
-                                    Object name</label><input type="text" v-model="object.name" name="name" id=""
+                                    Naziv smještaja</label><input type="text" v-model="object.name" name="name" id=""
                                         class="form-control border border-dark"></div>
                             </div>
                             <div class="mt-3 sadrzaj col-lg-6 col-12">

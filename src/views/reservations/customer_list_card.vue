@@ -53,15 +53,15 @@ export default {
             {{ moment(object.dataFromPreview).format("D.M.YYYY") }} - {{ moment(object.dataToPreview).format("D.M.YYYY") }}
         </div>
         <div class="col-lg-1">
-            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Period:</span>
+            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Ukupno:</span>
             {{ object.total }} €
         </div>
         <div class="col-lg-3">
-            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Object:</span>
+            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Smještaj:</span>
             {{ object.objects.length ? object.objects[0].object_id +' - '+ object.objects[0].name : '???' }}
         </div>
         <div class="col-lg-3">
-            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Object:</span>
+            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Kupac:</span>
             {{ object.customer.length ? object.customer[0].firstName +' '+ object.customer[0].lastName : '???' }}
         </div>
         <div class="col-lg col-12 text-end">

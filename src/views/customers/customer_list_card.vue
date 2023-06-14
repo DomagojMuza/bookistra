@@ -38,7 +38,7 @@ export default {
 
 
         <div class="col-lg-3">
-            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Name/Last name:</span>
+            <span class="small fw-bold d-lg-none d-block mb-0 lh-1 mt-2">Ima/Prezime:</span>
             {{ object.firstName }}
             {{ object.lastName }}
         </div>

@@ -33,7 +33,7 @@ export default {
     <div v-if="customers" class="object-list">
         <div class="row mx-3 mt-3 d-lg-flex d-none">
             <div class="col-lg-3">
-                <div class="fw-bold">Name/Last name</div>
+                <div class="fw-bold">Ime/Prezime</div>
             </div>
             <div class="col-lg-3">
                 <div class="fw-bold">Email</div>

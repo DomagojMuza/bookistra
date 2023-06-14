@@ -115,7 +115,7 @@ export default {
         </div>
         <div class="col">
             <div class="d-flex justify-content-between my-2 px-3">
-                <button class="col-lg-auto col btn btn-sm btn-primary py-lg-0 py-3 px-2" @click="openAddObjectModal">Add new customer</button>
+                <button class="col-lg-auto col btn btn-sm btn-primary py-lg-0 py-3 px-2" @click="openAddObjectModal">Dodaj kupca</button>
                 <pagination class="col-lg-auto col-12 mt-lg-0 mt-3" v-if="customers.length" :count="count" :skip="skip" :limit="20"
                     @pageChange="pageChange" />
             </div>

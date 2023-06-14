@@ -130,7 +130,7 @@ export default {
         </div>
         <div class="col">
             <div class="d-flex justify-content-between my-2 px-3">
-                <button class="btn btn-sm btn-primary py-0 px-2" @click="openAddObjectModal">Add new object</button>
+                <button class="btn btn-sm btn-primary py-0 px-2" @click="openAddObjectModal">Dodaj smještaj</button>
                 <pagination class="" v-if="objects.length" :count="count" :skip="skip" :limit="10"
                     @pageChange="pageChange" />
             </div>

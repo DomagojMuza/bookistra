@@ -132,22 +132,22 @@ export default {
                             </div>
                         </div>
                         <div class="mt-3 sadrzaj col-12">
-                            <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">Object</label>
+                            <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">Smještaj</label>
                                 <v-select class="bg-white" v-model="selectedObject" @input="objectOnChange"
-                                    placeholder="Enter object name or id" required label="name" :options="objects">
+                                    placeholder="Naziv ili id smještaja" required label="name" :options="objects">
                                 </v-select>
                             </div>
                         </div>
                         <div class="mt-3 sadrzaj col-12">
-                            <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">Customer</label>
+                            <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">Kupac</label>
                                 <v-select class="bg-white" v-model="selectedCustomer" @input="customerOnChange" label="name"
-                                    placeholder="Enter customer name" :options="customers">
+                                    placeholder="Ime kupca" :options="customers">
                                 </v-select>
                             </div>
                         </div>
                         <div class="mt-3 sadrzaj col-12">
-                            <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">Customer</label>
-                                <v-select class="bg-white" placeholder="Select status" v-model="selectedStatus"
+                            <div><label for="objectName" class="form-label mb-0 mt-2 text-dark">Statzs</label>
+                                <v-select class="bg-white" placeholder="Odaberite status" v-model="selectedStatus"
                                     :required="true" :options="statuses">
                                 </v-select>
                             </div>

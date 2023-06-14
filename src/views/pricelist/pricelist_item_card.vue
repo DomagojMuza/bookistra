@@ -41,29 +41,29 @@ export default {
             <div class="col-lg-2 ps-lg-0 ">
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-auto col-4">
-                        <div class="d-lg-none ">Date from</div>
+                        <div class="d-lg-none ">Datum od</div>
                     </div>
                     <div class="col">
                         <input class="form-control rounded-0 border-dark" required v-model="item.dateFrom" type="date"
-                            name="dateFrom" placeholder="Date from">
+                            name="dateFrom" placeholder="Datum od">
                     </div>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-auto col-4">
-                        <div class="d-lg-none ">Date to</div>
+                        <div class="d-lg-none ">Datum do</div>
                     </div>
                     <div class="col">
                         <input class="form-control rounded-0 border-dark" required v-model="item.dateTo" type="date"
-                            name="dateFrom" placeholder="Date to">
+                            name="dateFrom" placeholder="Datum do">
                     </div>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-auto col-4">
-                        <div class="d-lg-none ">Price (€)</div>
+                        <div class="d-lg-none ">Cijena (€)</div>
                     </div>
                     <div class="col">
                         <input type="number" name="price" required class="form-control rounded-0  border-dark" step="0.1" v-model="item.price" id="">
@@ -72,8 +72,8 @@ export default {
             </div>
             <div class="col-lg-2 col-12 mt-lg-0 mt-2">
                 <div class="d-flex justify-content-lg-start justify-content-end">
-                    <button class="btn btn-primary btn-sm" type="submit">Update</button>
-                    <div class="btn btn-warning btn-sm ms-3" @click="deleteItem(item)">Delete</div>
+                    <button class="btn btn-primary btn-sm" type="submit">Ažuriraj</button>
+                    <div class="btn btn-warning btn-sm ms-3" @click="deleteItem(item)">Izbriši</div>
                 </div>
             </div>
         </form>

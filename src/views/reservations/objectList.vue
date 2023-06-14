@@ -39,13 +39,13 @@ export default {
                 <div class="fw-bold">Period</div>
             </div>
             <div class="col-lg-1">
-                <div class="fw-bold">Total</div>
+                <div class="fw-bold">Ukupno</div>
             </div>
             <div class="col-lg-3">
-                <div class="fw-bold">Object</div>
+                <div class="fw-bold">Smještaj</div>
             </div>
             <div class="col-lg-3">
-                <div class="fw-bold">Customer</div>
+                <div class="fw-bold">Kupac</div>
             </div>
         </div>
         <customer_list_card v-for="customer in customers" :object="customer" @showDetailsCard="openModal" @objectDeleted="passDeletedToList" />
