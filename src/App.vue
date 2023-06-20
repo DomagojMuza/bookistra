@@ -12,23 +12,24 @@ export default {
   async created() {
     window.addEventListener("scroll", this.myEventHandler);
 
-},
-destroyed() {
-  window.removeEventListener("scroll", this.myEventHandler);
-},
-methods: {
-  myEventHandler(e) {
-   if(window.pageYOffset > 0) this.navClass = 'position-fixed w-100';
-   else this.navClass = '';
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.myEventHandler);
+  },
+  methods: {
+    myEventHandler(e) {
+      if (window.pageYOffset > 0) this.navClass = 'position-fixed w-100';
+      else this.navClass = '';
+    }
   }
-}
 }
 
 </script>
 
 <template>
   <nav class="navbar navbar-expand-lg px-2 bg-primary" style="z-index: 20;">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse px-2" id="mainNavbar">
@@ -48,7 +49,5 @@ methods: {
   <RouterView />
 </template>
 
-<style>
-
-</style>
+<style></style>
 

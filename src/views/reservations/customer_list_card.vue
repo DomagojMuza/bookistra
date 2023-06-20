@@ -66,18 +66,16 @@ export default {
         </div>
         <div class="col-lg col-12 text-end">
             <div class="row h-100 g-0 align-items-center justify-content-lg-end justify-content-between">
-                <div class="col-lg-auto col text-center pointer bg-warning px-3 py-2" title="Uredi">
-                    <div>
+                <div class="col-lg-auto col text-center pointer px-3 py-2" title="Uredi">
+                    <div class="btn btn-warning">
                         <div @click="openModal(object._id)">
                             <i class="las la-pen la-lg"></i>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-auto col text-center pointer bg-warning px-3 py-2" title="Obrisi objekt">
-                    <div>
-                        <div @click="deleteObject(object._id)">
-                            <i class="las la-trash la-lg"></i>
-                        </div>
+                <div class="col-lg-auto col text-center pointer px-3 py-2" title="Obrisi objekt">
+                    <div class="btn btn-danger" @click="deleteObject(object._id)">
+                            <i class="las la-trash la-lg text-white"></i>
                     </div>
                 </div>
             </div>

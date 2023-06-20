@@ -99,25 +99,24 @@ export default {
 
                 </div>
             </div>
-            <div class="col-lg-2 col-3 bg-warning">
+            <div class="col-lg-2 col-5 bg-warning">
                 <div class="row h-100 g-0 align-items-center">
-                    <div class="col-lg-6 col-12 text-center pointer" title="Uredi">
-                        <div>
-                            <div @click="openModal(object._id)">
-                                <i class="las la-pen la-2x"></i>
-                            </div>
+                    <div class="col-lg-6 col-6 text-center pointer mt-lg-0 mt-2" title="Uredi">
+                        <div class="btn btn-light" @click="openModal(object._id)">
+                                <i class="las la-pen la-lg"></i>
                         </div>
                     </div>
-                    <router-link :to="{ name: 'pricelist', params: { _id: object.object_id }}" target='_blank' class="col-lg-6 col-12 text-center pointer" title="Cjenik">
-                        <div>
-                            <i class="las la-euro-sign la-2x"></i>
+                    <router-link :to="{ name: 'pricelist', params: { _id: object.object_id }}" 
+                        target='_blank' class="col-lg-6 col-6 text-center pointer mt-lg-0 mt-2" 
+                        title="Cjenik"
+                    >
+                        <div class="btn btn-light">
+                            <i class="las la-euro-sign la-lg"></i>
                         </div>
                     </router-link>
-                    <div class="col-12 text-center pointer" title="Obrisi objekt">
-                        <div>
-                            <div @click="deleteObject(object._id)">
-                                <i class="las la-trash la-2x"></i>
-                            </div>
+                    <div class="col-lg-6 col-6 my-lg-0 my-2 text-center pointer" title="Obrisi objekt">
+                        <div class="btn btn-danger" @click="deleteObject(object._id)">
+                                <i class="las la-trash text-white la-lg"></i>
                         </div>
                     </div>
                 </div>
