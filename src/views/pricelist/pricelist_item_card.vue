@@ -15,7 +15,7 @@ export default {
                 let res = await update_pricelist_item(item);
             } catch (error) {
                 this.$emit('resetItemData', this.orginalItem);
-                alert(error.data);
+                this.$swal(error.data.error);
             }
         },
         async deleteItem(item) {

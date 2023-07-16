@@ -111,8 +111,8 @@ export default {
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" @click="updateObject">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                    <button type="button" class="btn btn-primary" @click="updateObject">Spremi izmjene</button>
                 </div>
             </div>
         </div>

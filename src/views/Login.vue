@@ -24,7 +24,7 @@ export default {
                 localStorage.setItem("token", res.data.token);
                 this.$router.push('/').then(() => { this.$router.go() })
             } catch (error) {
-                this.error = error.data.error
+                this.$swal(error.data.error);
             }  
         },        
     },
